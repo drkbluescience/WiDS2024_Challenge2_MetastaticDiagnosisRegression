@@ -42,4 +42,6 @@ The notebook table presents detailed RMSE scores for each model and imputation c
 ## Conclusion
 This study underscores the significance of selecting appropriate imputation techniques and modelling approaches for predicting metastatic diagnosis periods. Combining standard and group-based imputations was particularly effective for handling datasets with diverse missing value patterns. 
 
-CatBoost emerged as the top-performing model, particularly due to its compatibility with categorical data and its ability to work well with features selected through SHAP values. The findings demonstrate that structured feature selection and stratified grouping improve predictive accuracy in healthcare-related regression tasks by capturing meaningful relationships within the data, especially for tree-based models.
+CatBoost emerged as the top-performing model, particularly due to its compatibility with categorical data and its ability to work well with features selected through SHAP values. 
+
+The findings demonstrate that structured feature selection and stratified grouping improve predictive accuracy in healthcare-related regression tasks by capturing meaningful relationships within the data, especially for tree-based models.
