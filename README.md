@@ -23,11 +23,11 @@ Several regression models were evaluated, with key models fine-tuned using cross
 - Fine-tuning model parameters
 - Implementing a stacking meta-model approach with ensemble techniques
   
-Results
-The modeling results highlighted the effectiveness of using CatBoost with tailored imputation techniques and StratifiedKFold validation. 
-Group-based imputations combined with specific models yielded the best performance. Notably, CatBoost, with Constant Categorical imputation for categorical features and KNN for numerical features, produced the lowest RMSE scores. Additionally, the use of 9-fold StratifiedKFold, grouped by breast_cancer_diagnosis_desc, enhanced the model’s ability to capture categorical group structures, resulting in the best public and private RMSE scores. 
-Feature selection based on SHAP values further improved modeling performance, helping CatBoost identify the most predictive variables.
-Detailed RMSE scores for each model and imputation combination are presented in the table within the notebook, with GradientBoosting also showing promising results using group-based imputation strategies.
+# Results
+The modelling results highlighted the effectiveness of using CatBoost with tailored imputation techniques and StratifiedKFold validation. 
+Group-based imputations combined with specific models yielded the best performance. CatBoost, with Constant Categorical imputation for categorical features and KNN for numerical features, produced the lowest RMSE scores. Additionally, using 9-fold StratifiedKFold, grouped by breast_cancer_diagnosis_desc, enhanced the model’s ability to capture categorical group structures, resulting in the best public and private RMSE scores. 
+Feature selection based on SHAP values further improved modelling performance, helping CatBoost identify the most predictive variables.
+The notebook table presents detailed RMSE scores for each model and imputation combination, with GradientBoosting also showing promising results using group-based imputation strategies.
 
-Conclusion
-This study underscores the significance of selecting appropriate imputation techniques and modeling approaches for predicting metastatic diagnosis periods. The combination of standard and group-based imputations was particularly effective for handling datasets with diverse missing value patterns. CatBoost emerged as the top-performing model, particularly due to its compatibility with categorical data and its ability to work well with features selected through SHAP values. By capturing meaningful relationships within the data, especially for tree-based models, the findings demonstrate that structured feature selection and stratified grouping improve predictive accuracy in healthcare-related regression tasks.
+# Conclusion
+This study underscores the significance of selecting appropriate imputation techniques and modelling approaches for predicting metastatic diagnosis periods. The combination of standard and group-based imputations was particularly effective for handling datasets with diverse missing value patterns. CatBoost emerged as the top-performing model, particularly due to its compatibility with categorical data and its ability to work well with features selected through SHAP values. By capturing meaningful relationships within the data, especially for tree-based models, the findings demonstrate that structured feature selection and stratified grouping improve predictive accuracy in healthcare-related regression tasks.
