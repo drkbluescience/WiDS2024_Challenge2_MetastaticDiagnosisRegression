@@ -20,7 +20,7 @@ Several regression models were evaluated, with key models fine-tuned using cross
 
 - Establishing baseline scores and SHAP values for feature importance
 - Conducting backward feature selection for optimal feature sets
-- Fine-tuning model parameters
+- Hyperparameter tuning
 - Implementing a stacking meta-model approach with ensemble techniques
   
 ## Results
